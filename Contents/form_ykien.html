@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đóng góp ý kiến</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            font-size: 20px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .checkbox-group {
+            margin-top: 15px;
+        }
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        .submit-btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Đóng góp ý kiến cho thư viện trường</h1>
+        <form>
+            <label>Họ và tên:</label>
+            <input type="text" id="hoten" name="hoten">
+
+            <label>Email:</label>
+            <input type="text" id="email" name="email">
+
+            <label>Đóng góp ý kiến:</label>
+            <textarea id="yk" name="yk" rows="4"></textarea>
+
+            <div class="checkbox-group">
+                <label>Thể loại cần bổ sung thêm sách:</label>
+                <input type="checkbox" name="op1"> Truyện ngắn <br>
+                <input type="checkbox" name="op2"> Kỹ năng sống <br>
+                <input type="checkbox" name="op3"> Công nghệ thông tin <br>
+                <input type="checkbox" name="op4"> Lịch sử <br>
+            </div>
+
+            <input type="submit" class="submit-btn" value="Gửi góp ý">
+        </form>
+    </div>
+</body>
+</html>

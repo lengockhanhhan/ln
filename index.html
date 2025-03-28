@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Cá Nhân</title>
+  
+  <style>
+    /* Định dạng chung */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+    }
+
+    /* Header */
+    .header {
+      background-color: #007acc;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      margin: 0;
+      font-size: 30px;
+    }
+
+    .header p {
+      margin: 5px 0 0;
+      font-size: 16px;
+    }
+
+    /* Thanh điều hướng */
+    .topnav {
+      background-color: #005f99;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    .topnav a {
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      text-align: center;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    .topnav a:hover {
+      background-color: #0088cc;
+      border-radius: 5px;
+    }
+
+    /* Phần nội dung chính */
+    .content {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    iframe {
+      width: 90%;
+      height: 700px;
+      border: none;
+      background: white;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Phần Header -->
+  <div class="header">
+    <h1>Website Cá Nhân</h1>
+    <p>Học để sống hạnh phúc</p>
+  </div>
+
+  <!-- Thanh điều hướng -->
+  <div class="topnav">
+    <a href="Contents/gioithieu.html" target="noidung">Giới thiệu</a>
+    <a href="Contents/duan.html" target="noidung">Dự án nhóm</a>
+    <a href="Contents/tkb.html" target="noidung">Thời khóa biểu</a>
+    <a href="Contents/bai7_nv1.html" target="noidung">Góp ý</a>
+  </div>
+
+  <!-- Phần nội dung chính -->
+  <div class="content">
+    <iframe name="noidung" src="Contents/gioithieu.html"></iframe>
+  </div>
+
+</body>
+</html>

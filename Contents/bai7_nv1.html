@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Góp ý thư viện</title>
+    <link href="../style.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 20px;
+            text-align: center;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            text-align: left;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="checkbox"] {
+            width: auto;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        label, p {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Đóng góp ý kiến cho thư viện nhà trường</h1>
+    <form action="bai7_nv3.html">
+        <label for="ten">Họ và tên:</label>
+        <input type="text" id="ten" name="ten" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="yk">Ý kiến của bạn:</label>
+        <textarea id="yk" name="yk" cols="50" rows="3" required></textarea>
+        
+        <p>Thể loại cần bổ sung thêm sách:</p>
+        <label><input type="checkbox" name="tn"> Truyện ngắn</label><br>
+        <label><input type="checkbox" name="kn"> Kĩ năng</label><br>
+        <label><input type="checkbox" name="cntt"> Công nghệ thông tin</label><br>
+        <label><input type="checkbox" name="tt"> Truyện tranh</label><br>
+        <label><input type="checkbox" name="ls"> Lịch sử</label><br>
+        
+        <input type="submit" id="ok" name="ok" value="GÓP Ý">
+    </form>
+</body>
+</html>

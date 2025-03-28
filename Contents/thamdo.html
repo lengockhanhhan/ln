@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thăm dò ý kiến</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        h3 {
+            color: #e74c3c;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        label, p {
+            font-size: 16px;
+            color: #333;
+            display: block;
+            text-align: left;
+            margin-top: 15px;
+            line-height: 1.6;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 8px;
+            transform: scale(1.2);
+        }
+
+        .radio-group, .checkbox-group {
+            text-align: left;
+            margin-top: 10px;
+            line-height: 2;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>THĂM DÒ Ý KIẾN HỌC SINH<br>THAM GIA CÂU LẠC BỘ NGOẠI KHÓA</h3>
+        <form action="review.html"> 
+            <label>Họ tên:</label> 
+            <input type="text" name="ht" placeholder="Nhập họ tên của bạn" required>
+
+            <p>Thời gian bạn sẽ tham gia ngoại khóa ngày chủ nhật:</p>
+            <div class="radio-group">
+                <input type="radio" name="tg" value="s"> Sáng <br>
+                <input type="radio" name="tg" value="c"> Chiều <br>
+                <input type="radio" name="tg" value="t"> Tối
+            </div>
+
+            <p>Bạn sẽ tham gia các câu lạc bộ nào?</p>
+            <div class="checkbox-group">
+                <input type="checkbox" name="clb" value="tin_hoc"> Tin học <br>
+                <input type="checkbox" name="clb" value="hoa_hoc"> Hóa học <br>
+                <input type="checkbox" name="clb" value="vat_ly"> Vật lý <br>
+                <input type="checkbox" name="clb" value="van_hoc"> Văn học
+            </div>
+
+            <input type="submit" value="GỬI Ý KIẾN">  
+        </form>
+    </div>
+</body>
+</html>

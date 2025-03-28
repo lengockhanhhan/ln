@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÀI TẬP TIN HỌC 12</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .profile-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+            max-width: 500px;
+            width: 100%;
+        }
+        .profile-text {
+            flex: 1;
+            padding-right: 20px;
+            line-height: 1.8; /* Tăng khoảng cách giữa các dòng */
+        }
+        h3 {
+            color: #e74c3c;
+            margin-bottom: 10px; /* Tăng khoảng cách dưới tiêu đề */
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            border-radius: 10px;
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="profile-container">
+        <div class="profile-text">
+            <h3>Thông tin cá nhân</h3> 
+            <p>Họ tên: <b>Lê Ngọc Khánh Hân</b></p>
+            <p>Nickname: <b>Nah bell</b></p>
+
+            <h3>Sở thích</h3>    
+            <p><i>Xem phim hoạt hình.</i></p>
+            <p>Bộ phim yêu thích: 
+                <a href="https://www.youtube.com/watch?v=YwGNnYrzpKw" target="_blank">Doraemon</a>
+            </p> 
+
+            <p><i>Chơi game</i>:  
+                <a href="https://www.youtube.com/watch?v=U7W8QR9fsFw" target="_blank">Honkai: Star Rail</a>
+            </p>
+        </div>
+
+        <div class="profile-image">
+            <img src="../hqdefault.webp" alt="Ảnh cá nhân">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
